@@ -206,9 +206,6 @@ h6{
 .dropdown-reviews .dropdown-toggle:focus{
     box-shadow: none;
 }
-.dropdown-reviews {
-    margin-right: 2.6rem;
-}
 .dropdown-reviews .dropdown-toggle:after{
     display: none;
 }
@@ -249,7 +246,7 @@ h6{
     border-radius: 0;
     border: none;
     min-width: 29.1875rem;
-    left: -17% !important;  
+    left: -135% !important;  
     top: 100% !important;
     right: 0;
     box-shadow: 0px -2px 15px rgba(33, 37, 41, 0.15);
@@ -577,6 +574,7 @@ h6{
 
 /* ----- SECTION SUBSCRIBE ----- */
 .section-subscribe{
+    height: 400px;
     background-color: #567C8B;
     padding-top: 3.3rem;
     padding-bottom: 2.7rem;
@@ -658,7 +656,6 @@ h6{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-right: 1.1rem;
 }
 .footer-social a {
     display: block;

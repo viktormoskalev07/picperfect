@@ -96,7 +96,7 @@ gulp.task('style:build', async function () {
         .pipe(postcss([mqpacker({
           sort: sortCSSmq
         })]))
-        .pipe(cssmin())
+        // .pipe(cssmin())
         .pipe(sourcemaps.write())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(path.build.css))
