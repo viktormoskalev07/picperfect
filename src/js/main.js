@@ -21,9 +21,14 @@ window.addEventListener("load", function () {
 
   elems.forEach((elem) =>
     elem.addEventListener("click", function () {
-      elems.forEach((elem) => elem.classList.remove("active"));
 
-      this.classList.toggle("active");
+      if (this.classList.contains('active')) {
+        elems.forEach((elem) => elem.classList.remove("active"));
+      } else {
+
+        elems.forEach((elem) => elem.classList.remove("active"));
+        this.classList.add("active");
+      }
     })
   );
 });
