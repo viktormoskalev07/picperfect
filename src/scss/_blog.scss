@@ -27,6 +27,9 @@
     position: relative;
     height: 0;
     padding-bottom: 60%;
+    @include desktop-md{
+        padding-bottom: 40%;
+    }
     &__img{
         position: absolute;
         left: 0;

@@ -1,0 +1,18 @@
+.header-hide{
+ 
+transform: translateY(-120%);
+
+}
+.header{
+      position: sticky;
+      transition: 0.5s;
+    top:0px;
+}
+.header-shadow{
+    box-shadow: 0px 10px 15px rgba(47, 53, 58, .2);
+}
+
+
+@keyframes headerhide {
+    
+}

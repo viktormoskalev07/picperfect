@@ -1,19 +1,41 @@
+const header=document.querySelector(".header");
+let scrollPos=0 ;
 window.addEventListener("load", function () {
   window.addEventListener("scroll", function () {
-    if (window.scrollY >= 100) {
-      document.querySelector(".header").classList.add("fixed");
-      document.querySelector("body").classList.add("fixed-header");
+   
+    if(scrollPos<window.scrollY){
+      header.classList.add("header-hide");
+          scrollPos=window.scrollY;
+        } else{
+          header.classList.remove("header-hide");
+          scrollPos=window.scrollY;
+        }
+
+    if (window.scrollY >= 50) {
+    
+     header.classList.add("header-shadow");
+     
+      // document.querySelector("body").classList.add("fixed-header");
     } else {
-      document.querySelector(".header").classList.remove("fixed");
-      document.querySelector("body").classList.remove("fixed-header");
+  
+     header.classList.remove("header-shadow");
+      // document.querySelector("body").classList.remove("fixed-header");
     }
   });
-
+  body = document.body;
+  html=document.querySelector("html");
+  let ii =0;
   document
     .querySelector(".header .menu-btn")
     .addEventListener("click", function (e) {
-      document.querySelector(".header").classList.toggle("menu-open");
+     header.classList.toggle("menu-open");
+     if(header.classList.contains("menu-open")){
+      body.style.paddingRight=window.innerWidth-html.offsetWidth +"px";
+     } else{
+      body.style.paddingRight=0;
+     }
       document.querySelector("body").classList.toggle("overflow");
+      
       e.preventDefault();
     });
 
