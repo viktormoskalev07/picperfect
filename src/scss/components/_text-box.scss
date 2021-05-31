@@ -1,0 +1,26 @@
+.a-text-box {
+  padding-top: 4.3rem;
+  padding-bottom: 3.8rem;
+
+  @include tablet {
+    padding-top: 5.5rem;
+    padding-bottom: 4.9rem;
+    background-color: #F4F5F6;
+  }
+
+  h4 {
+    @include desktop-md {
+      font-size: 3rem;
+      line-height: 1.2em;
+    }
+  }
+
+  a {
+    color: #567C8B;
+
+    &:hover {
+      text-decoration: underline;
+      text-shadow: 1px 0px 0px #567c8b;
+    }
+  }
+}
