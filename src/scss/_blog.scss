@@ -1,0 +1,58 @@
+.blog-container{
+    text-align: center;
+    margin: 0 auto; 
+    padding:0 20px;
+    @include tablet{
+        padding:0 60px; 
+        max-width: 940px;
+    }
+
+    h2{
+        color: #2F353A;
+        font-size: 32px;
+        line-height: 1.4;
+ 
+    }
+    p{
+        text-align: center;
+        font-size: 16px;
+    line-height:  1.5;
+    }
+  
+
+}
+
+.blog-hero{
+
+    position: relative;
+    height: 0;
+    padding-bottom: 60%;
+    &__img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    img{ 
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+ 
+
+img{
+    max-height: 100%;
+}
+figure{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #2F353A;
+    &:hover , &:visited{
+        color: #2F353A;
+    }
+}
