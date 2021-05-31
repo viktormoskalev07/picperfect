@@ -15,8 +15,18 @@
 		@@include('./html-templates/_header.html',{})
 
 		<main class="main-content">
+			
+			@@include('./html-templates/_blog-filter.html',{})
+
+<div class="container">
+	@@include('./blog.html')
+</div>
+ 
 
 			@@include('./html-templates/_subscribe.html',{})
+
+			@@include('./html-templates/_advantages.html',{})
+
 		</main>
 
 		@@include('./html-templates/_footer.html',{})

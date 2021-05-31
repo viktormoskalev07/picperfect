@@ -1,0 +1,18 @@
+.dropup,
+.dropright,
+.dropdown,
+.dropleft {
+  position: relative;
+}
+
+.dropdown-toggle {
+  white-space: nowrap;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  float: left;
+  text-align: left;
+  list-style: none;
+}
