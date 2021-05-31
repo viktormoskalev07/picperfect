@@ -1,0 +1,5 @@
+._DS_Store
+/src/_DS_Store
+.vscode/
+node_modules/
+yarn.lock
