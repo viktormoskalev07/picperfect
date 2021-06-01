@@ -223,6 +223,7 @@ h6 {
 	opacity: 1;
 	visibility: visible;
 	transition: 0.4s;
+	display: block;
 }
 
 .dropdown-reviews .dropdown-toggle:focus {
@@ -273,7 +274,6 @@ h6 {
 }
 
 .dropdown-reviews .dropdown-menu {
-	margin-top: 1.5rem;
 	border-radius: 0;
 	border: none;
 	min-width: 29.1875rem;
@@ -686,6 +686,10 @@ h6 {
 
 .subscribe .form-control:focus {
 	box-shadow: none;
+
+	&::placeholder {
+		color: transparent;
+	}
 }
 
 .subscribe .btn {
@@ -1056,7 +1060,7 @@ h6 {
 
 	.dropdown-reviews {
 		width: 100%;
-		margin-bottom: 2.6rem;
+		padding-bottom: 2.6rem;
 	}
 
 	.header .user-nav {
@@ -1113,6 +1117,7 @@ h6 {
 		min-width: 1rem;
 		left: 0 !important;
 		padding: 1.1rem 1rem 2.1rem;
+		display: none;
 	}
 
 	.dropdown-reviews {
@@ -1310,9 +1315,9 @@ h6 {
 		margin: 0 2.7rem;
 	}
 
-	.header {
-		top: 4.9rem;
-	}
+	// .header {
+	// 	top: 4.9rem;
+	// }
 
 	.header .nav-wrap {
 		top: 8.6rem;

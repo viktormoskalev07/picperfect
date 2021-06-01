@@ -90,15 +90,15 @@ gulp.task('js:build', async function () {
 
 gulp.task('style:build', async function () {
     gulp.src(path.src.style)
-        // .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(prefixer('last 2 versions'))
         .pipe(postcss([mqpacker({
           sort: sortCSSmq
         })]))
         .pipe(cssmin())
-        // .pipe(sourcemaps.write())
-        .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write())
+        // .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
