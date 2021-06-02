@@ -1,20 +1,40 @@
-@@include('./html-templates/_head.html', ) 
+@@include('./html-templates/_head.html', {})
 
-		@@include('./html-templates/_header.html',{})
+@@include('./html-templates/_header.html',{})
 
- 
-			<h1 class='blog-title'>2020 Annual Family Photo Book Ideas</h1>
-			<div class="blog-hero">
-				<figure class="blog-hero__img">
-					<img src="https://www.pikperfect.com/blog/wp-content/uploads/2020/11/Recipe-book-photo-ideas.jpg" alt="blog img">
-				</figure>
-			</div> 
-                    <article class='blog-container'>
-                        @@include('./html-templates/the__content.html')  
-                    </article>
-			@@include('./html-templates/_subscribe.html',{})
- 
 
-		@@include('./html-templates/_footer.html',{})
- 
+<main class="main-content">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class='blog-title'>2020 Annual Family Photo Book Ideas</h1>
+
+				@@include('./html-templates/_share-btns.html',{})
+			</div>
+		</div>
+	</div>
+
+	<div class="blog-hero">
+		<figure class="blog-hero__img">
+			<img src="https://www.pikperfect.com/blog/wp-content/uploads/2020/11/Recipe-book-photo-ideas.jpg" alt="blog img">
+		</figure>
+	</div>
+
+	<article class='blog-container'>
+		@@include('./html-templates/the__content.html',{})
+
+	</article>
+	@@include('./html-templates/_subscribe.html',{})
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				@@include('./html-templates/_share-btns.html',{})
+			</div>
+		</div>
+	</div>
+</main>
+
+@@include('./html-templates/_footer.html',{})
+
 @@include('./html-templates/_script.html',{})

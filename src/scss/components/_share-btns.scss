@@ -1,0 +1,43 @@
+.share-btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: 30px;
+
+  @include desktop-md {
+    margin-bottom: 100px;
+  }
+
+  button {
+    padding: 0;
+    margin: 4px 8px;
+    border: none;
+    background-color: transparent;
+    
+    circle, path {
+      transition: .4s;
+    }
+
+    &:hover {
+      svg {
+        circle {
+          fill: none;
+
+          &.pin-a {
+            fill: #567c8b;
+            opacity: 1;
+          }
+        }
+
+        path {
+          fill: #567c8b;
+
+          &.pin-c {
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@@include('./html-templates/_head.html', )
+@@include('./html-templates/_head.html', {})
 
 
 
@@ -8,9 +8,9 @@
 			
 			@@include('./html-templates/_blog-filter.html',{})
 
-<div class="container">
-	@@include('./blog.html')
-</div>
+<!-- <div class="container"> -->
+	@@include('./blog.html',{})
+<!-- </div> -->
  
 
 			@@include('./html-templates/_subscribe.html',{})

@@ -26,20 +26,23 @@
       padding: 0 12px;
       margin-bottom: 12px;
       font-size: 0.875rem;
-      text-transform: uppercase;
 
       &:not(:last-of-type) {
         border-right: .5px solid #2F353A;
       }
     }
 
-    a {
+    button {
       color: inherit;
+      background-color: transparent;
+      text-transform: uppercase;
+      border: none;
       transition: color .2s;
 
       &:hover {
         color: #567C8B;
         text-shadow: 1px 0px 0px #567C8B;
+        cursor: pointer;
       }
     }
   }
