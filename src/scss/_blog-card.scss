@@ -1,6 +1,7 @@
 .blog-card {
 	cursor: pointer;
 	transition: .5s;
+	
 
 	&__container {
 		margin: 0 -20px;
@@ -66,22 +67,39 @@
 
 	&.showed {
 		display: block;
-    visibility: visible;
+		visibility: visible;
 		opacity: 1;
 		transform: scale(1);
 	}
 	&.hided {
-		animation: animateOut .5s ease;
+		animation: animateOut 0.3s ease-out; 
+		animation-fill-mode: forwards ;
+		max-height: 600px;
+		overflow: hidden;
 	}
 
 	@keyframes animateOut {
 		from {
-			opacity: 1;
-			transform: scale(1);
+	 
+		} 
+		90%{
+			max-height: 0px;   
+			padding: 5px 20px; 
 		}
-		to {
-			opacity: 0;
-			transform: scale(0);
+		99%{
+ 
+			max-height: 0px; 
+			position: relative;  
+			padding: 0;
+		}
+		100%{
+			 position: absolute;
+			max-height: 0px; 
+			 opacity: 0; 
+			margin: 0; 
+			padding: 0;
+			
 		}
 	}
+ 
 }
