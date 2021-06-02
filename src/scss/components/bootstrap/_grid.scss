@@ -1,33 +1,14 @@
-.container,
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+ .container{
+   margin: 0 auto;
+   padding: 0 20px;
+ }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.no-gutters>.col,
-.no-gutters>[class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
+} 
 
 .col-1,
 .col-2,
@@ -421,14 +402,7 @@
 }
 
 @media (min-width: 1200px) {
-
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg,
-  .container-xl {
-    max-width: 1140px;
-  }
+ 
 
   .col-xl {
     flex-basis: 0;

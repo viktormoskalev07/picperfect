@@ -1,17 +1,16 @@
+@import "components/bootstrap/grid";
+@import "components/bootstrap/dropdown";
+@import "components/bootstrap/utilites";
+@import "components/bootstrap/btn";
+
+
+
 @import "media-mixins";
-@import "variables.scss";
-
-
+@import "variables.scss"; 
 @import "components/bootstrap/reboot";
 
 @import "components/default";
- 
-
-@import "components/bootstrap/grid";
-@import "components/bootstrap/btn";
-@import "components/bootstrap/dropdown";
-@import "components/bootstrap/utilites";
-
+  
 @import "components/blog-nav"; 
 @import "components/text-box";
 @import "components/share-btns";

@@ -81,8 +81,8 @@ gulp.task('js:build', async function () {
       //     presets: ["@babel/env"],
       //   })
       // )
-      // .pipe(sourcemaps.init())
-      // .pipe(sourcemaps.write())
+      .pipe(sourcemaps.init())
+      .pipe(sourcemaps.write())
       // .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest(path.build.js))
       .pipe(reload({stream: true}));

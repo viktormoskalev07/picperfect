@@ -300,8 +300,11 @@ h6 {
 .header .nav-wrap {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	flex: 1;
+	align-items: center; 
+
+	@media (min-width:1023px) {
+			flex:1;
+	}
 }
 
 .header .header-nav {
@@ -341,8 +344,11 @@ h6 {
 
 .header .right-nav {
 	margin-left: auto;
-	display: flex;
+	display: none;
 	align-items: center;
+	@media (min-width:1023px) {
+		display: flex;
+}
 }
 
 .header .user-nav {
@@ -978,15 +984,17 @@ h6 {
 	.header {
 		padding: 1.5rem 0.9rem 1.5rem;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	.header .nav-wrap {
-		position: fixed;
+		// position: fixed;
 		background: #FFFFFF;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		top: 6.7rem;
+		// left: 0;
+		// right: 0;
+		// bottom: 0;
+		// top: 6.7rem;
+		width: 100%;
 		z-index: 1000;
 		transition: 0.4s;
 		max-height: 0;
@@ -1001,7 +1009,7 @@ h6 {
 	.header.menu-open .nav-wrap {
 		transition: 0.4s;
 		max-height: 100vh;
-		overflow-y: auto;
+ 
 	}
 
 	.header .logo {
@@ -1079,6 +1087,7 @@ h6 {
 	.header .right-nav {
 		padding: 0.1rem 0.9rem;
 		flex-wrap: wrap;
+		margin-left: auto;
 	}
 
 	.dropdown-reviews {

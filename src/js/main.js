@@ -180,10 +180,7 @@ function cardFilter(){
   
     function startFilter(e) {
       target = e.target;
-      btnData = target.getAttribute('data-filter')
-   
-  
-  
+      btnData = target.getAttribute('data-filter') 
       if (target.classList.contains("filter-btn")) {
         if(btnData.toLowerCase() == 'all') {
           for (i = 0; i < cards.length; i++) {
