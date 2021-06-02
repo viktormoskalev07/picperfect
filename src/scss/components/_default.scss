@@ -12,6 +12,9 @@ body {
 	color: #2E3031;
 	font-weight: 300;
 	background-color: #FCFCFC;
+	@media (min-width:1030px) {
+		padding-right: 0 !important;
+	}
 }
 
 .page-wrap {

@@ -172,8 +172,7 @@ try{
 function cardFilter(){
 
   if (document.querySelector(".section-blog__nav")) {
-    const cards = document.querySelectorAll(".blog-card");
-  
+    const cards = document.querySelectorAll(".blog-card"); 
     document
       .querySelector("#blog-item-filter")
       .addEventListener("click", startFilter);
