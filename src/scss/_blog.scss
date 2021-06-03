@@ -38,7 +38,7 @@
         bottom: 0;
         right: 0;
     }
-    img{ 
+    img ,picture{ 
         width: 100%;
         object-fit: cover;
     }
@@ -65,4 +65,28 @@ a{
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+.blog-hero__img , .lezzyBig{ 
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; 
+
+}
+.blog-hero__img img , .blog-hero__img picture{ 
+    width: 100%;
+    object-fit: cover;
+}
+
+.lezzyBig img , .lezzyBig picture{
+    width: 100%;
+    object-fit: cover; 
+    opacity: 0;
+    transition: 1s;
+}
+
+.lazzyshow{
+    opacity: 1 !important;
 }
