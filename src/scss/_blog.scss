@@ -26,20 +26,24 @@
 
     position: relative;
     height: 0;
-    padding-bottom: 60%;
-    @include desktop-md{
-        padding-bottom: 40%;
-    }
-    &__img{
-        margin-bottom: 30px;
+    padding-bottom: 120%;
+        @media (min-width:425px) {
+            padding-bottom: 100%; 
+        }
+        @media (min-width:768px) {
+            padding-bottom: 47%; 
+        }
+    margin-bottom: 30px;
+    &__img , .lazzybig{ 
         position: absolute;
         left: 0;
         top: 0;
         bottom: 0;
         right: 0;
     }
-    img ,picture{ 
+    img ,picture { 
         width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 
@@ -67,26 +71,11 @@ a{
     text-align: center;
 }
 
-.blog-hero__img , .lezzyBig{ 
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0; 
-
-}
-.blog-hero__img img , .blog-hero__img picture{ 
-    width: 100%;
-    object-fit: cover;
-}
-
-.lezzyBig img , .lezzyBig picture{
-    width: 100%;
-    object-fit: cover; 
-    opacity: 0;
+.lazzybig{
     transition: 1s;
+    opacity: 0;
 }
 
 .lazzyshow{
-    opacity: 1 !important;
+    opacity: 1;
 }

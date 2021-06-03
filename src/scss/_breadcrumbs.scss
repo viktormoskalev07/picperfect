@@ -10,14 +10,27 @@
     }
     &__item{
         display: inline-block;
-        a{
-        
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Open Sans';
+        letter-spacing: 0;
         color: #2E3031;
-        &:hover{
-            color: black;
-             text-shadow:0px 0px   black;  
-        }
+        a{   
+          
+            background-color: transparent;
+            // text-transform: uppercase;
+            border: none; 
+            transition:   .5s;
+       
+            
+      
+            &:hover {
+              color: #567C8B;
+              font-weight: 800; 
+              text-shadow: 0px 0px 0px #567C8B;
+              cursor: pointer;
+            }
+           
         &::after{
             content:' /  ';
 
