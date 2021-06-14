@@ -16,7 +16,7 @@
 	}
 
 	@include desktop-md {
-		flex-basis: 33%;
+		flex-basis: 33.33%;
 	}
 
 
@@ -76,7 +76,12 @@
 		animation-fill-mode: forwards ;
 		max-height: 600px;
 		overflow: hidden;
+		&.hided-safary-fix {
+			display: none;
 	}
+	}
+
+ 
 
 	@keyframes animateOut {
 		from {
@@ -86,14 +91,12 @@
 			max-height: 0px;   
 			padding: 5px 20px; 
 		}
-		99%{
- 
-			max-height: 0px; 
-			position: relative;  
+		99%{ 
+			position: relative;   
 			padding: 0;
 		}
 		100%{
-			 position: absolute;
+			 position: absolute; 
 			max-height: 0px; 
 			 opacity: 0; 
 			margin: 0; 

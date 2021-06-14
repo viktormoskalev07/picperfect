@@ -169,8 +169,20 @@ try{
 
 
 // filter 
-function cardFilter(){
+ 
+function  showCard(item) { 
+  item.classList.remove('hided'); 
+  item.classList.remove('hided-safary-fix');
+}
 
+function hideCard(item) {
+  item.classList.add('hided') ;
+  setTimeout(() => {
+    item.classList.add('hided-safary-fix') ;
+  }, 450);
+}
+
+function cardFilter(){ 
   if (document.querySelector(".section-blog__nav")) {
     const cards = document.querySelectorAll(".blog-card"); 
     document
@@ -204,21 +216,7 @@ function cardFilter(){
           }
         }
       }
-    }
-  
-    // function showCards() {
-    //   for (i = 0; i < cards.length; i++) {
-    //     toggleShow(cards[i])
-    //   }
-    // }
-  
-    function  showCard(item) { 
-      item.classList.remove('hided');
-    }
-  
-    function hideCard(item) {
-      item.classList.add('hided') ;
-    }
+    } 
   } 
 }
 
@@ -229,6 +227,30 @@ try{
 }
 
 // filter 
+
+//promobar
+const xhr = new XMLHttpRequest();
+const promoText = document.querySelector('#promo-place-text');
+const promoCode = document.querySelector('#promo-place-code');
+ 
+xhr.open('GET', 'https://www.pikperfect.com/get-discount' );  
+xhr.responseType='json';
+xhr.addEventListener('load', function(){
+  if (xhr.status < 400) { 
+   console.log(xhr.response.code); 
+   console.log(xhr.response.text); 
+   promoCode.innerHTML='Code:'+xhr.response.code;
+   promoText.innerHTML=' '+xhr.response.text;
+   promoText.classList.remove('promobar-hide');
+   setTimeout(() => {
+       promoCode.classList.remove('promobar-hide');
+   }, 600);
+  
+} 
+})
+xhr.send();
+
+//promobar
 
 
  

@@ -1,0 +1,19 @@
+.promobar{
+    text-align: center; 
+    min-height: 60px;
+    @media (min-width:425px) {
+        min-height:46px;
+    }
+    @media (min-width:768px) {
+        min-height:24px;
+    }
+
+    p{
+        transition: 0.5s; 
+    }
+  
+}  
+.promobar-hide{
+    transform: scale(0); 
+}
+ 
